@@ -10,7 +10,6 @@ useHead({
   ],
 })
 
-useDark() // 启用暗色模式自动监测
 StyleProvider({
   '--color-primary': THEME_COLOR,
 })

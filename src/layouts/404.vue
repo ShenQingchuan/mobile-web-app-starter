@@ -10,7 +10,7 @@ const router = useRouter()
     <RouterView />
     <div>
       <button
-        class="mt-6 inline-block cursor-pointer border-2 border-zinc-800 rounded-lg border-solid bg-zinc-900 px-6 py-2 text-zinc-900 disabled:cursor-default dark:border-zinc-100:50 dark:bg-zinc-100:30 disabled:bg-gray-600 dark:text-white disabled:opacity-50 !outline-none"
+        class="mt-6 inline-block cursor-pointer border-2 border-zinc-400:50 rounded-lg border-solid bg-zinc-600:20 px-6 py-2 text-zinc-900 disabled:cursor-default dark:border-zinc-100:50 dark:bg-zinc-100:30 disabled:bg-gray-600 dark:text-white disabled:opacity-50 !outline-none"
         @click="router.back()"
       >
         返回

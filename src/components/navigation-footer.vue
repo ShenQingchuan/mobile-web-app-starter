@@ -5,9 +5,8 @@ interface NavigationItem {
 }
 
 const navigationItems: NavigationItem[] = [
-  // ...
-  { icon: 'home', url: '/' },
-  { icon: 'account-circle', url: '/me' },
+  { icon: 'i-ic:baseline-house', url: '/' },
+  { icon: 'i-ic:baseline-account-circle', url: '/me' },
 ]
 const router = useRouter()
 const active = ref(0)
@@ -29,12 +28,15 @@ function navigate(newTab: number | string) {
     >
       <var-bottom-navigation-item
         v-for="(item, index) in navigationItems"
-        :key="item.icon"
+        :key="item.url"
         class="bg-[var(--color-primary)]!"
-        :icon="item.icon"
         :index="index"
         @click="navigate(index)"
-      />
+      >
+        <template #icon>
+          <div class="block h-6 w-6" :class="`${item.icon}`" />
+        </template>
+      </var-bottom-navigation-item>
     </var-bottom-navigation>
   </div>
 </template>
