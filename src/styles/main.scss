@@ -1,0 +1,54 @@
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+html.dark {
+  background: #121212;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-display: swap;
+  src: url('/assets/DM_Sans.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-display: swap;
+  src: url('/assets/Great_Vibes.ttf') format('truetype');
+}
+
+.fade-0_15s-enter-active,
+.fade-0_15s-leave-active {
+  transition: opacity 0.15s ease;
+}
+.fade-0_15s-enter-from,
+.fade-0_15s-leave-to {
+  opacity: 0;
+}
+
+.fade-0_25s-enter-active,
+.fade-0_25s-leave-active {
+  transition: opacity 0.25s ease;
+}
+.fade-0_25s-enter-from,
+.fade-0_25s-leave-to {
+  opacity: 0;
+}
+
+.fade-0_5s-enter-active,
+.fade-0_5s-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-0_5s-enter-from,
+.fade-0_5s-leave-to {
+  opacity: 0;
+}
