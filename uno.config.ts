@@ -12,7 +12,7 @@ import {
 export default defineConfig({
   shortcuts: [
     ['text-autodark', 'text-zinc-900 dark:text-zinc-100'],
-    ['page-min-h', 'min-h-[calc(100vh-54px-74px)] overflow-y-scroll'],
+    ['page-min-h', 'min-h-[calc(100vh-128px)] overflow-y-scroll'],
     ['row-flex', 'flex flex-row items-center'],
     ['col-flex', 'flex flex-col'],
   ],

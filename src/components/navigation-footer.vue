@@ -19,7 +19,7 @@ function navigate(newTab: number | string) {
 </script>
 
 <template>
-  <div class="navigation-footer var-elevation--3 mt-auto bg-[var(--color-primary)] px-0.25rem pb-6">
+  <div class="navigation-footer var-elevation--3 fixed bottom-0 mt-auto h-64px w-full row-flex bg-[var(--color-primary)] px-0.25rem">
     <var-bottom-navigation
       v-model:active="active"
       class="bg-[var(--color-primary)]!"
