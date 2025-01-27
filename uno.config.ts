@@ -29,6 +29,7 @@ export default defineConfig({
         serif: 'DM Serif Display',
         mono: 'DM Mono',
         rubik: 'Rubik',
+        oswald: 'Oswald',
       },
     }),
   ],

@@ -11,7 +11,9 @@ import { VueRouterAutoImports } from 'unplugin-vue-router'
 import VueRouter from 'unplugin-vue-router/vite'
 import { defineConfig } from 'vite'
 import { VitePWA } from 'vite-plugin-pwa'
+// import VueDevTools from 'vite-plugin-vue-devtools'
 import Layouts from 'vite-plugin-vue-layouts'
+import { VineVitePlugin } from 'vue-vine/vite'
 
 export default defineConfig({
   resolve: {
@@ -56,6 +58,9 @@ export default defineConfig({
         './src/composables',
         './src/utils',
         './src/modules',
+      ],
+      include: [
+        /\.vine\.ts$/,
       ],
       vueTemplate: true,
       resolvers: [
@@ -119,6 +124,8 @@ export default defineConfig({
 
     // https://github.com/webfansplz/vite-plugin-vue-devtools
     // VueDevTools(),
+
+    VineVitePlugin(),
   ],
   css: {
     preprocessorOptions: {

@@ -15,7 +15,8 @@
       "vite/client",
       "unplugin-vue-router/client",
       "vite-plugin-pwa/client",
-      "vite-plugin-vue-layouts/client"
+      "vite-plugin-vue-layouts/client",
+      "vue-vine/macros"
     ],
     "allowJs": true,
     "strict": true,

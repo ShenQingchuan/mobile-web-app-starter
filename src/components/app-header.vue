@@ -33,7 +33,7 @@ function handleClickLogo() {
 <template>
   <var-app-bar title="Fated" title-position="center">
     <div
-      class="relative top-0.5 select-none text-8 text-white font-700 font-rubik"
+      class="font-oswald relative top-0.5 select-none text-8 text-white font-700"
       @click="handleClickLogo"
       @touchstart="handleTouchStart"
       @touchend="handleTouchEnd"
