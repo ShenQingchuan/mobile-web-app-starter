@@ -60,7 +60,8 @@ export default defineConfig({
         './src/modules',
       ],
       include: [
-        /\.vine\.ts$/,
+        './src/**/*.vue',
+        './src/**/*.ts',
       ],
       vueTemplate: true,
       resolvers: [
